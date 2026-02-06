@@ -58,3 +58,23 @@ button {
 }
 
 #display-area h2 { border-bottom: 2px solid #e74c3c; padding-bottom: 10px; }
+
+input[type="number"] {
+    background: #2c3e50;
+    color: white;
+    border: 1px solid #ecf0f1;
+    border-radius: 4px;
+    padding: 3px;
+    text-align: center;
+}
+
+#role-assignment-ui {
+    max-height: 300px;
+    overflow-y: auto; /* 役職が多いのでスクロール可能に */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#start-btn:disabled {
+    cursor: not-allowed;
+}
