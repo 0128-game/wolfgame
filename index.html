@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>簡易人狼ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>人狼ゲーム</h1>
+        <div id="setup-screen">
+            <p>プレイヤー名をカンマ区切りで入力（4人以上推奨）</p>
+            <input type="text" id="player-names" value="A,B,C,D,E">
+            <button onclick="startGame()">ゲーム開始</button>
+        </div>
+        <div id="display-area"></div>
+        <div id="action-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
