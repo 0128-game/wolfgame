@@ -9,10 +9,17 @@
     <div id="game-container">
         <h1>人狼ゲーム</h1>
         <div id="setup-screen">
-            <p>プレイヤー名をカンマ区切りで入力（4人以上推奨）</p>
-            <input type="text" id="player-names" value="A,B,C,D,E">
-            <button onclick="startGame()">ゲーム開始</button>
+    <h3>1. プレイヤー登録</h3>
+    <textarea id="player-names" placeholder="名前をカンマ区切りで入力（例: A, B, C, D, E）"></textarea>
+
+    <h3>2. 役職編成</h3>
+    <div id="role-assignment-ui" style="text-align: left; display: inline-block; background: #34495e; padding: 15px; border-radius: 8px;">
         </div>
+    <div style="margin-top: 10px;">
+        合計人数: <span id="total-role-count">0</span> / 登録人数: <span id="registered-player-count">0</span>
+    </div>
+    <button class="main-btn" id="start-btn" onclick="startGame()" style="margin-top:20px;">ゲーム開始</button>
+</div>
         <div id="display-area"></div>
         <div id="action-area"></div>
     </div>
